@@ -13,7 +13,6 @@ import post3 from "../../assets/posterShow3.jpeg";
 import post4 from "../../assets/posterShow4.jpeg";
 import post5 from "../../assets/posterShow5.jpeg";
 import post6 from "../../assets/posterShow6.jpeg";
-import wpp from "../../assets/botaoWpp.png";
 
 const Shows = () => {
   return (
@@ -43,9 +42,6 @@ const Shows = () => {
           <S.ImgPost src={post6} alt="poster do show 6" />
         </SwiperSlide>
       </Swiper>
-      <a href="https://wa.me/+5521976460392?text=Reservas" target="blank">
-        <S.ImgWpp src={wpp} alt="botão do whatsapp"/>
-      </a>
     </S.Container>
   );
 };

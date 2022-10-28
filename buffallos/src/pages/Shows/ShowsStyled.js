@@ -16,21 +16,3 @@ export const ImgPost = styled.img`
   height: 100%;
 `;
 
-export const ImgWpp = styled.img`
-  position: fixed;
-  bottom: 1rem;
-  right: 2.5rem;
-  width: 200px;
-  z-index: 10;
-  cursor: pointer;
-
-  @media (max-width: 1320px) and (min-width: 768px) {
-    width: 170px;
-    right: 1.5rem;
-  }
-
-  @media (max-width: 768px) {
-    width: 150px;
-    right: 0.5rem;
-  }
-`;
