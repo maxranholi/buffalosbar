@@ -3,7 +3,7 @@ import image from "../../assets/background-main.png"
 import { ImageDesktop } from "./MainStyled"
 import { Title } from "./MainStyled"
 import { ImageMobile } from "./MainStyled"
-import backgoundblack from "../../assets/backgound_black.jpg"
+import backgoundblack from "../../assets/backgroundMobile.png"
 
 const Main = () => {
     return (
