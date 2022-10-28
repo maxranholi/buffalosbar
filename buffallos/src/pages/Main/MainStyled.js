@@ -60,19 +60,19 @@ export const SubTitle = styled.h2`
 
 export const ImgWpp = styled.img`
   position: fixed;
-  bottom: 0;
-  right: 0;
+  bottom: 0.5rem;
+  right: 1.5rem;
   width: 200px;
   z-index: 10;
   cursor: pointer;
 
   @media (max-width: 1320px) and (min-width: 768px) {
     width: 170px;
-    right: 0;
+    right: 1rem;
   }
 
   @media (max-width: 768px) {
     width: 150px;
-    right: 90px;
+    right: 0.5rem;
   }
 `;

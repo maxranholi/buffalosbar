@@ -1,9 +1,9 @@
 // SWIPER
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, EffectCreative } from "swiper";
 import "swiper/css";
-import "swiper/css/effect-cards";
+import "swiper/css/effect-creative";
 import "./styles.css";
-import { EffectCards } from "swiper";
 
 // Estilos do Styled
 import * as S from "./ShowsStyled";
@@ -18,9 +18,23 @@ const Shows = () => {
   return (
     <S.Container>
       <Swiper
-        effect={"cards"}
         grabCursor={true}
-        modules={[EffectCards]}
+        effect={"creative"}
+        loop={true}
+        creativeEffect={{
+          prev: {
+            shadow: true,
+            translate: [0, 0, -400],
+          },
+          next: {
+            translate: ["100%", 0, 0],
+          },
+        }}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
+        modules={[Autoplay, EffectCreative]}
         className="mySwiper"
       >
         <SwiperSlide>
