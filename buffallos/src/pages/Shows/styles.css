@@ -1,0 +1,25 @@
+.swiper {
+    width: 35%;
+    height: 60vh;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+}
+
+@media (max-width: 1320px) and (min-width: 768px) {
+    .swiper {
+        width: 45%;
+        height: 60vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .swiper {
+        width: 75%;
+        height: 50vh;
+    }
+}
