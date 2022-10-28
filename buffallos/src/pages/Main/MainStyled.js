@@ -14,7 +14,7 @@ export const ImageDesktop = styled.img`
   height: 100vh;
 
 
-  @media (max-width: 769px) {
+  @media (max-width: 768px) {
     display: none
 }
 
@@ -25,7 +25,8 @@ display: none;
 
 
 @media (max-width: 769px) {
-    display: flex
+    display: flex;
+    width: 100%;
 }
 `
 
@@ -37,6 +38,10 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 line-height: 1rem;
+
+@media (max-width: 768px) {
+    display: none
+}
 `
 
 export const Title = styled.h1`
