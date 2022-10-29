@@ -44,16 +44,64 @@ export const Title = styled.h1`
   font-family: Alfa Slab One;
   color: #131313;
 
+  @media (max-width: 1755px) {
+    font-size: 4.6rem;
+  }
+
+  @media (max-width: 1721px) {
+    font-size: 4.5rem;
+  }
+
   @media (max-width: 1366px) {
     font-size: 4.6rem;
+  }
+
+  @media (max-width: 1232px) {
+    font-size: 4rem;
+  }
+
+  @media (max-width: 1075px) {
+    font-size: 3.7rem;
+  }
+
+  @media (max-width: 997px) {
+    font-size: 3.4rem;
+  }
+
+  @media (max-width: 913px) {
+    font-size: 3rem;
+  }
+
+   @media (max-width: 807px) {
+    font-size: 2.8rem;
   }
 `;
 export const SubTitle = styled.h2`
   font-size: 3.5rem;
   color: #131313;
 
+  @media (max-width: 1755px) {
+    font-size: 3rem;
+  }
+
+  @media (max-width: 1721px) {
+    font-size: 2rem;
+  }
+
   @media (max-width: 1366px) {
     font-size: 2.5rem;
+  }
+
+  @media (max-width: 1075px) {
+    font-size: 2.2rem;
+  }
+
+  @media (max-width: 997px) {
+    font-size: 2rem;
+  }
+
+  @media (max-width: 847px) {
+    font-size: 1.8rem;
   }
 `;
 

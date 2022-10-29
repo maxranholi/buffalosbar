@@ -16,7 +16,7 @@ import post6 from "../../assets/posterShow6.jpeg";
 
 const Shows = () => {
   return (
-    <S.Container>
+    <S.Container id="Shows">
       <Swiper
         grabCursor={true}
         effect={"creative"}

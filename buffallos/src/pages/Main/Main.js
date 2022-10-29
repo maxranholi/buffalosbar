@@ -6,10 +6,12 @@ import { ImageMobile } from "./MainStyled";
 import backgoundblack from "../../assets/backgroundMobile.png";
 import { ImgWpp } from "./MainStyled";
 import wpp from "../../assets/botaoWpp.png";
+import Header from "../Header/Header";
 
 const Main = () => {
   return (
     <Container>
+      <Header />
       <ImageDesktop src={image} />
       <ImageMobile src={backgoundblack} />
       <Texts>
