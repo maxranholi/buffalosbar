@@ -17,6 +17,7 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     font-size: 1.6rem;
     font-family: Oswald;
+    background-color: #f3f4f6;
   }
 `;
 
