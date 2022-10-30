@@ -5,7 +5,7 @@ export const Container = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 87vh;
   width: 100%;
   background-color: #000;
   background-image: url("https://i.imgur.com/fLlpzez.png");
