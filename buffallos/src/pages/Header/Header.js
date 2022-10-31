@@ -1,8 +1,19 @@
 import * as S from "./HeaderStyled";
 import { useState } from "react";
 
+
 const Header = () => {
     const [toggleMenu, setToggleMenu] = useState("disabled");
+    const [colorChange, setColorchange] = useState(false);
+    const changeNavbarColor = () =>{
+       if(window.scrollY > 0){
+         setColorchange(true);
+       }
+       else{
+         setColorchange(false);
+       }
+    };
+    window.addEventListener('scroll', changeNavbarColor);
 
     const toggleState = () => {
       if (toggleMenu === "disabled") {
@@ -20,7 +31,7 @@ const Header = () => {
 
     return (
       <S.Header id="header">
-        <S.Nav id="nav" className={toggleMenu}>
+        <S.Nav id="nav" className={colorChange ? 'navbar colorChange' : 'navbar'}>
           <S.BtnMobile
             onClick={() => toggleState()}
             aria-label="Abrir Menu"

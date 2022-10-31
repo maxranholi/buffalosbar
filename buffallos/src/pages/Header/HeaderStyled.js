@@ -10,13 +10,58 @@ export const Header = styled.div`
   align-items: center;
   gap: 2.8rem;
   justify-content: space-around;
-  background: transparent;
-  position: absolute;
-
+  position: fixed;
   top: 0;
   z-index: 10;
+
+  .navbar{
+    background-color: transparent;
+}
+  
+.navbar.colorChange{
+    box-sizing: border-box;
+  height: 100px;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 2.8rem;
+  justify-content: space-around;
+  background: #f1f1f1;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  transition: all ease 0.4s;
+}
+
   @media (max-width: 768px) {
-    justify-content: space-between;
+    .navbar{
+        box-sizing: border-box;
+  height: 100px;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  gap: 2.8rem;
+  justify-content: flex-end;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+  
+.navbar.colorChange{
+    box-sizing: border-box;
+  height: 100px;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  gap: 2.8rem;
+  justify-content: flex-end;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
   }
 `;
 
@@ -110,15 +155,15 @@ export const BtnMobile = styled.button`
 // *Estilização do Hamburger
 export const Hamburger = styled.span`
   @media (max-width: 768px) {
-    border-top: 2px solid;
-    width: 20px;
+    border-top: 4px solid;
+    width: 30px;
     color: #ffff;
     &::after,
     ::before {
       content: "";
       display: block;
-      width: 20px;
-      height: 2px;
+      width: 30px;
+      height: 4px;
       margin-top: 5px;
       transition: 0.3s;
       position: relative;
@@ -186,5 +231,4 @@ display: block;
     transition-duration: 500ms;
     transition-property: width, left;
   }
-
 `
