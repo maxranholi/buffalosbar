@@ -62,8 +62,8 @@ export const Header = styled.div`
   top: 0;
   z-index: 10;
 }
-  }
-`;
+}
+`
 
 // !CÓODIGO PORCO, MAS TABO
 export const DivTest = styled.div`
@@ -156,15 +156,15 @@ export const BtnMobile = styled.button`
 export const Hamburger = styled.span`
   @media (max-width: 768px) {
     border-top: 4px solid;
-    width: 30px;
+    width: 36px;
     color: #ffff;
     &::after,
     ::before {
       content: "";
       display: block;
-      width: 30px;
+      width: 36px;
       height: 4px;
-      margin-top: 5px;
+      margin-top: 10px;
       transition: 0.3s;
       position: relative;
       background-color: #ffff;
@@ -179,13 +179,13 @@ export const Nav = styled.nav`
       border-top-color: transparent;
     }
     &.active #hamburger::before {
-      transform: rotate(135deg);
+      transform: rotate(125deg);
       background: #ffff;
     }
     &.active #hamburger::after {
-      transform: rotate(-135deg);
+      transform: rotate(-125deg);
       background-color: #ffff;
-      top: -7px;
+      top: -13px;
     }
     &.active #menu {
       height: calc(100vh - 70px);
