@@ -17,6 +17,7 @@ export const Container = styled.footer`
   @media (max-width: 768px) {
     margin-top: 0px;
     height: 4rem;
+    gap: 20%;
   }
 `;
 

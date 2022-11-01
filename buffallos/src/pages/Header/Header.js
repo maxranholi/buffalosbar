@@ -40,19 +40,13 @@ const Header = () => {
         </S.BtnMobile>
         <S.MenuUl id="menu" role="menu">
           <li>
-            <S.MenuA href="#Shows" onClick={() => setToggleMenu("disabled")}>
-              Shows
-            </S.MenuA>
+            <S.MenuA href="#Shows" onClick={() => setToggleMenu("disabled")}>Shows</S.MenuA>
           </li>
           <li>
-            <S.MenuA href="#Menu" onClick={() => setToggleMenu("disabled")}>
-              Menu
-            </S.MenuA>
+          <S.TagA href="http://www.buffallosbar.com.br/cardapio/qr/" target="blank">Menu</S.TagA> 
           </li>
           <li>
-            <S.MenuA href="#Location" onClick={() => setToggleMenu("disabled")}>
-              Localização
-            </S.MenuA>
+            <S.MenuA href="#Location" onClick={() => setToggleMenu("disabled")}>Localização</S.MenuA>
           </li>
         </S.MenuUl>
       </S.Nav>
