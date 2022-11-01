@@ -3,7 +3,7 @@ import * as S from "./LocationStyled";
 const Location = () => {
   return (
     <>
-      <S.SectionTitle>Localização</S.SectionTitle>
+      <S.SectionTitle id="Location">Localização</S.SectionTitle>
       <S.Container>
         <S.ContainerInfos>
           <div>
